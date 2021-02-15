@@ -1,0 +1,18 @@
+swagger: "2.0"
+
+info:
+  tittle: "Micro trading"
+  version: "0.1"
+
+basePath: /v0.1
+
+paths:
+  /most_active/:
+    get:
+      responses:
+        '200':
+          description: "Fetch the list of most active company's stocks from Nasdaq"
+          schema:
+            type: array
+            items:
+              $ref: '#

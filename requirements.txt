@@ -1,0 +1,5 @@
+selenium
+flask
+flask-swagger
+connexion
+fastavro
