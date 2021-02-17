@@ -2,3 +2,4 @@
 /nasdaq/instance
 *.log
 start_server.sh
+drivers/
