@@ -1,3 +1,4 @@
 /.idea
-/instance
+/nasdaq/instance
 *.log
+start_server.sh

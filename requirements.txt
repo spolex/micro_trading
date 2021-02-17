@@ -1,5 +1,7 @@
-selenium
-flask
-flask-swagger
-connexion
-fastavro
+selenium==3.141.0
+flask==1.1.2
+connexion[swagger-ui]==2.6.0
+flask-marshmallow
+flask-injector
+Flask-SQLAlchemy
+injector==0.18.4

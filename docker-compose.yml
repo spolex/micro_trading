@@ -1,0 +1,13 @@
+---
+version: "3.7"
+
+services:
+  nasdaq:
+    image: deep-learning-workstation:5000/nasdaq
+    build: .
+    environment:
+      - MODE=dev
+    volumes:
+      - .:/code
+    ports:
+      - "5004:5000"

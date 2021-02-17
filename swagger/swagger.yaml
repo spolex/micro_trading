@@ -1,0 +1,36 @@
+swagger: "2.0"
+
+info:
+  title: "Micro trading"
+  version: "0.1"
+  license:
+    name: MIT
+
+basePath: /v0.1
+
+paths:
+  /most_active/:
+    get:
+      operationId: nasdaq.api.most_visited.class_instance.get
+      responses:
+        '200':
+          description: 'Successfully fetched most active from nasdaq'
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Active'
+
+definitions:
+  Active:
+    type: object
+    properties:
+      symbol:
+        type: string
+      name:
+        type: string
+      last:
+        type: string
+      change:
+        type: string
+      volume:
+        type: string

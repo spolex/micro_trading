@@ -39,7 +39,7 @@ The indexing will be a process of:
 
 |Method|URI|Description| Status |
 |------|---|-----------|--------|
-| GET | /scrap/most_active/<to_sql> | | **Development** |
+| POST | /scrap/most_active/<to_sql> | | **Development** |
 | PATCH | /scrap/<name>/{id} | this PATCH method will allow us to make changes on the indexed item | Not started |
 | DELETE | /scrap/<name>/{id} | this method will remove the id from the index | Not started |
 | GET | /scrap/<name>/{id} | this method will return the room data for a given room id | Not started |
