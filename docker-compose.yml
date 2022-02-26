@@ -1,9 +1,9 @@
 ---
-version: "3.7"
+version: "3.8"
 
 services:
   nasdaq:
-    image: deep-learning-workstation:5000/nasdaq
+    image: nasdaq
     build: .
     environment:
       - MODE=dev

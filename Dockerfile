@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.8-buster
 
 ARG GIT_USER=user
 ARG GIT_PASSWORD=password
@@ -28,10 +28,7 @@ RUN FIREFOX_SETUP=firefox-setup.tar.bz2 && \
 
 RUN mkdir /code
 WORKDIR /code
-RUN git clone https://github.com/spolex/micro_trading.git
-WORKDIR /code/micro_trading
-
+ADD requirements.txt .
 RUN pip install -r requirements.txt
 
-EXPOSE 9090
 CMD ["python", "/code/run.py"]
