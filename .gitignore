@@ -1,3 +1,4 @@
 /.idea
 /instance
 *.log
+__pycache__
